@@ -1,0 +1,171 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+html{
+    font-size: 22px;
+}
+ body{
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+ }
+ .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100;
+    max-width: 500px;
+    border: 1px groove red;
+    margin: auto;
+    background-image: url("C:\Users\kp043\Desktop\reactjs\design\src\1000_F_555904385_u1RfTA1HFU1PIqC84Cw9GEul5gN4hBg0.jpg") ;
+    
+ }
+
+ header{
+    align-items: center;
+    width: 100%;
+    padding: 0 0.25;
+    background-color: rgb(49, 84, 173);
+    background-image: linear-gradient(to right,rgb(59, 71, 235),rgb(40, 52, 114));
+    display: flex;
+    place-content: center;
+    
+    
+ }
+ main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+
+ }
+ footer{
+    width: 100%;
+    padding: 0.25;
+    background-image: linear-gradient(to right,rgb(18, 24, 108),rgb(61, 91, 240));
+    color: aliceblue;
+    display: grid;
+    place-content: center;
+ }
+ul li::before{
+   content: "\200B";
+}
+.item{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 0.15rem 0 0.15rem 0.15rem;
+   margin: 0.25rem 0;
+   background-color: rgb(183, 175, 175) ;
+}
+.item.first-child{
+   margin: 0;
+}
+.item input[type="checkbox"]{
+   text-align: center;
+   width: 2.5rem;
+   width: 48px;
+   min-width: 48px;
+   height: 2.5rem;
+   height: 48px;
+   min-height: 48px;
+   cursor: pointer;
+   margin-right: 0.5rem;
+} 
+.item input[type="checkbox"]:focus + label{
+   text-decoration: solid;
+}
+.item > label{
+   font-size: o.75rem;
+   flex-grow: 1;
+}
+.item svg{
+   width: 48px;
+   min-width: 48px;
+   height: 36px;
+   font-size: 1rem;
+   color: rgb(6, 12, 93);
+   cursor: pointer;
+}
+.item svg:focus,
+.item svg:hover{
+   color: red;
+   outline: none;
+}
+.addForm {
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   margin: 0.5rem 0 0;
+   padding: 0 0.5rem 0.25rem;
+   border-bottom: 1px solid #eee;
+ }
+ 
+ .addForm label {
+   position: absolute;
+   left: -99999px;
+ }
+ 
+ .addForm input[type='text'] {
+   flex-grow: 1;
+   max-width: calc(100% - 50px);
+   min-height: 48px;
+   font-size: 1rem;
+   padding: 0.25rem;
+   border-radius: 0.25rem;
+   margin-right: 0.25rem;
+   outline: none;
+ }
+ 
+ button {
+   height: 48px;
+   min-width: 48px;
+   border-radius: 0.25rem;
+   padding: 0.5rem;
+   font-size: 1rem;
+   background-color: aliceblue;
+   color: mediumblue;
+   cursor: pointer;
+ }
+ 
+ button:focus, 
+ button:hover {
+   color: rgb(243, 242, 242);
+   background-color: rgb(11, 72, 157);
+   outline: none;
+ }
+ 
+ .searchForm {
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   margin: 0.25rem 0 0;
+   padding: 0 0.5rem 0.25rem;
+   border-bottom: 1px solid #dcd4d4;
+ }
+ 
+ .searchForm label {
+   position: absolute;
+   left: -99999px;
+ }
+ 
+ .searchForm input[type='text'] {
+   flex-grow: 1;
+   max-width: 100%;
+   min-height: 48px;
+   font-size: 1rem;
+   padding: 0.25rem;
+   border-radius: 0.25rem;
+   outline: none;
+ }
